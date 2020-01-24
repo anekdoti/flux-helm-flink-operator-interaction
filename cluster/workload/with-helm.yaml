@@ -1,0 +1,9 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+    name: wordcount-operator-example-with-helm
+spec:
+    chart:
+        repository: repo #PLEASE EDIT
+        version: 0.1.1
+        name: wordcount-operator-example
